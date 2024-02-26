@@ -27,7 +27,7 @@ registry.executeLocked("someLockKey", () -> someExclusiveResourceCall());
 The method rethrows an exception from the task call, throws an `InterruptedException` if `Lock` is interrupted.
 In addition, a variant with `Duration` throws a `java.util.concurrent.TimeoutException` when `lock.tryLock()` returns `false`.
 
-Spring Integration provides these `LockRegistrty` implementations for distributed locks:
+Spring Integration provides these `LockRegistry` implementations for distributed locks:
 
 * xref:hazelcast.adoc#hazelcast-lock-registry[Hazelcast]
 * xref:jdbc/lock-registry.adoc[JDBC]
